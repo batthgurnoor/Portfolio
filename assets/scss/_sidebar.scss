@@ -5,6 +5,18 @@
   padding-left: 39px;
   display: flex;
   flex-direction: column;
+
+  .toggle-sidebar {
+    position: absolute;
+    font-size: 30px;
+    width: 45px;
+    height: 45px;
+    background: darken($secondary, 30);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    right: -45px;
+  }
   .logo {
     height: 20%;
     padding-top: 62px;
@@ -61,6 +73,10 @@
               color: $primary;
             }
           }
+
+          span {
+            display: none;
+          }
           i {
             font-size: 18pt;
 
@@ -68,7 +84,7 @@
             transition: all 0.3s;
           }
         }
-        span {
+        > span {
           position: absolute;
           white-space: nowrap;
           left: 20px;
