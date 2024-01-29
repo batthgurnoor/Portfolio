@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
       rotate: true,
       rotateTouch: true,
       shadow: true,
-      highlight: true,
+      highlight: false,
     });
   } else {
     console.error("Atropos element not found");
