@@ -16,3 +16,18 @@ document
   .addEventListener("click", function () {
     document.querySelector("#sidebar").classList.toggle("open");
   });
+
+document.addEventListener("DOMContentLoaded", function () {
+  var atroposElement = document.querySelector("#my-atropos");
+  if (atroposElement) {
+    Atropos({
+      el: atroposElement,
+      rotate: true,
+      rotateTouch: true,
+      shadow: true,
+      highlight: true,
+    });
+  } else {
+    console.error("Atropos element not found");
+  }
+});

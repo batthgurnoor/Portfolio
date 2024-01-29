@@ -16,7 +16,9 @@
       rel="stylesheet"
       href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
     />
+
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://unpkg.com/atropos/atropos.css" />
   </head>
   <body>
     <div id="sidebar">
@@ -71,7 +73,68 @@
       </div>
     </div>
     <main>
-      <section id="home" class="active">Home</section>
+      <section id="home" class="active">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 info">
+              <img
+                class="person-circle"
+                src="assets/images/photo_round.png"
+                alt="person-circle"
+              />
+              <h1><span>I'm</span> Gurnoor,</h1>
+              <h2>Where Algorithms meet Apertures</h2>
+              <p>
+                From coding scenes to capturing them, my life's in two tabs:
+                'Run' and 'Shoot'.
+              </p>
+              <a
+                class="btn-custom-blue"
+                href="assets/files/IT_Resume.pdf"
+                download
+                >Download Resume</a
+              >
+              <div class="socials">
+                <ul>
+                  <li>
+                    <a href="https://www.linkedin.com/in/batthgurnoor/">
+                      <i class="lab la-linkedin-in"></i>
+                      <span>LinkedIn</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://github.com/batthgurnoor"
+                      ><i class="lab la-github"></i><span>GitHub</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/batth_gurnoor"
+                      ><i class="lab la-instagram"></i><span>Instagram</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div id="my-atropos" class="col-lg-6 image" data-atropos-offset="0">
+              <div class="atropos my-atropos">
+                <!-- scale container (required) -->
+                <div class="atropos-scale">
+                  <!-- rotate container (required) -->
+                  <div class="atropos-rotate">
+                    <!-- inner container (required) -->
+                    <div class="atropos-inner">
+                      <img
+                        src="assets/images/person-home.jpg"
+                        alt="person-home"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="about">About</section>
       <section id="resume">Resume</section>
       <section id="work">Work</section>
@@ -84,5 +147,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/atropos/atropos.min.js" defer></script>
   </body>
 </html>

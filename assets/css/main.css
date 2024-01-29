@@ -15,6 +15,16 @@ h6 {
   font-family: "Playfair Display", serif;
 }
 
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
 p {
   font-family: "Ubuntu", sans-serif;
 }
@@ -35,6 +45,39 @@ main > section {
 }
 main > section.active {
   display: block;
+}
+
+.btn-custom-blue {
+  display: inline-block;
+  background: #262f48;
+  padding: 10px 52px;
+  text-decoration: none;
+  color: #658df2;
+  border-radius: 8px;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.btn-custom-blue:before {
+  content: "";
+  position: absolute;
+  width: 119px;
+  height: 119px;
+  background: #658df2;
+  opacity: 0.3;
+  border-radius: 50%;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 0.3s;
+}
+.btn-custom-blue:hover {
+  color: white;
+}
+.btn-custom-blue:hover:before {
+  transform: translate(-50%, -50%) scale(2);
 }
 
 #sidebar {
@@ -156,6 +199,77 @@ main > section.active {
   top: -4px;
   border-radius: 50%;
   left: 3px;
+}
+
+#home .info {
+  padding-top: 281px;
+}
+#home .info img.person-circle {
+  margin-bottom: 24px;
+}
+#home .info h1 {
+  margin-bottom: 24px;
+}
+#home .info h1 span {
+  color: #b6b7ba;
+}
+#home .info h2 {
+  color: #b6b7ba;
+  margin-bottom: 16px;
+}
+#home .info p {
+  max-width: 430px;
+  margin-bottom: 74px;
+}
+#home .info .socials {
+  margin-top: 191px;
+}
+#home .info .socials ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#home .info .socials ul li {
+  margin-right: 8px;
+}
+#home .info .socials ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 9px 11px;
+  transition: all 0.3s;
+  border-radius: 6px;
+}
+#home .info .socials ul li a:hover {
+  background: #1e1e20;
+}
+#home .info .socials ul li a:hover span,
+#home .info .socials ul li a:hover i {
+  color: white;
+}
+#home .info .socials ul li a i {
+  font-size: 18px;
+  margin-right: 8px;
+  color: #b6b7ba;
+  transition: all 0.3s;
+}
+#home .info .socials ul li a span {
+  color: #808185;
+  transition: all 0.3s;
+}
+#home .image {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+#home .image img {
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+#my-atropos .atropos-shadow {
+  box-shadow: 0 20px 50px rgb(226, 225, 225); /* Example - Adjust based on your needs */
 }
 
 @media (max-width: 768px) {
