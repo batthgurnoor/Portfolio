@@ -2,6 +2,10 @@
   background-image: url("../images/bg-shape.png");
   background-repeat: no-repeat;
   background-position: 40vh -24px;
+
+  .row {
+    width: 100%;
+  }
   .info {
     padding-top: 281px;
 
@@ -40,6 +44,7 @@
       ul {
         display: flex;
         list-style: none;
+        flex-wrap: wrap;
         margin: 0;
         padding: 0;
 
@@ -88,6 +93,7 @@
 
     img {
       border-radius: 8px;
+      max-width: 100%;
       transition: all 0.3s;
     }
   }
