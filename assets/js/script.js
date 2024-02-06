@@ -33,9 +33,15 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 var typed = new Typed(".field h2", {
-  strings: ["Where Algorithms meet Apertures", "Developer", "Photographer"],
+  strings: ["Developer", "Photographer", "Web Designer"],
   loop: true,
   typeSpeed: 70,
   backDelay: 1000,
   backSpeed: 20,
 });
+
+for (let i = 1; i < 15; i++) {
+  let meteor = document.createElement("span");
+  meteor.classList = "meteor";
+  document.querySelector("#home .meteor-shower").append(meteor);
+}

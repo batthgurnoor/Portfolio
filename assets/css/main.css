@@ -87,6 +87,7 @@ main > section.active {
   padding-left: 39px;
   display: flex;
   flex-direction: column;
+  z-index: 10;
 }
 #sidebar .toggle-sidebar {
   position: absolute;
@@ -281,7 +282,191 @@ main > section.active {
   border-radius: 8px;
   transition: all 0.3s;
 }
+#home .meteor-shower {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+#home .meteor-shower .meteor:nth-child(1) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 47vh;
+  left: 52vw;
+  animation: meteor 3991ms linear infinite;
+  animation-delay: 630ms;
+}
+#home .meteor-shower .meteor:nth-child(2) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 40vh;
+  left: 54vw;
+  animation: meteor 7989ms linear infinite;
+  animation-delay: 2433ms;
+}
+#home .meteor-shower .meteor:nth-child(3) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 10vh;
+  left: 24vw;
+  animation: meteor 4763ms linear infinite;
+  animation-delay: 4976ms;
+}
+#home .meteor-shower .meteor:nth-child(4) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 32vh;
+  left: 63vw;
+  animation: meteor 5336ms linear infinite;
+  animation-delay: 4139ms;
+}
+#home .meteor-shower .meteor:nth-child(5) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 25vh;
+  left: 87vw;
+  animation: meteor 5667ms linear infinite;
+  animation-delay: 3348ms;
+}
+#home .meteor-shower .meteor:nth-child(6) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 82vh;
+  left: 96vw;
+  animation: meteor 3886ms linear infinite;
+  animation-delay: 4216ms;
+}
+#home .meteor-shower .meteor:nth-child(7) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 34vh;
+  left: 14vw;
+  animation: meteor 7108ms linear infinite;
+  animation-delay: 3967ms;
+}
+#home .meteor-shower .meteor:nth-child(8) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 18vh;
+  left: 38vw;
+  animation: meteor 4462ms linear infinite;
+  animation-delay: 1294ms;
+}
+#home .meteor-shower .meteor:nth-child(9) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 51vh;
+  left: 71vw;
+  animation: meteor 3035ms linear infinite;
+  animation-delay: 627ms;
+}
+#home .meteor-shower .meteor:nth-child(10) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 94vh;
+  left: 33vw;
+  animation: meteor 4969ms linear infinite;
+  animation-delay: 4063ms;
+}
+#home .meteor-shower .meteor:nth-child(11) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 86vh;
+  left: 29vw;
+  animation: meteor 5525ms linear infinite;
+  animation-delay: 107ms;
+}
+#home .meteor-shower .meteor:nth-child(12) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 28vh;
+  left: 75vw;
+  animation: meteor 3916ms linear infinite;
+  animation-delay: 823ms;
+}
+#home .meteor-shower .meteor:nth-child(13) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 68vh;
+  left: 51vw;
+  animation: meteor 7864ms linear infinite;
+  animation-delay: 1555ms;
+}
+#home .meteor-shower .meteor:nth-child(14) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 95vh;
+  left: 39vw;
+  animation: meteor 7433ms linear infinite;
+  animation-delay: 4733ms;
+}
+#home .meteor-shower .meteor:nth-child(15) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 93vh;
+  left: 19vw;
+  animation: meteor 7349ms linear infinite;
+  animation-delay: 2780ms;
+}
 
+@keyframes meteor {
+  0% {
+    transform: translate(300px, -300px);
+    opacity: 1;
+  }
+  20% {
+    transform: translate(-300px, 300px);
+    opacity: 0;
+  }
+}
 #my-atropos .atropos-shadow {
   box-shadow: 0 20px 20px 50px rgba(226, 225, 225, 0.2); /* Example - Adjust based on your needs */
 }
