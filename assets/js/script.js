@@ -18,7 +18,7 @@ document
   });
 
 document.addEventListener("DOMContentLoaded", function () {
-  var atroposElement = document.querySelector("#my-atropos");
+  var atroposElement = document.querySelector(".my-atropos");
   if (atroposElement) {
     Atropos({
       el: atroposElement,
@@ -30,4 +30,12 @@ document.addEventListener("DOMContentLoaded", function () {
   } else {
     console.error("Atropos element not found");
   }
+});
+
+var typed = new Typed(".field h2", {
+  strings: ["Where Algorithms meet Apertures", "Developer", "Photographer"],
+  loop: true,
+  typeSpeed: 70,
+  backDelay: 1000,
+  backSpeed: 20,
 });

@@ -201,6 +201,11 @@ main > section.active {
   left: 3px;
 }
 
+#home {
+  background-image: url("../images/bg-shape.png");
+  background-repeat: no-repeat;
+  background-position: 40vh -24px;
+}
 #home .info {
   padding-top: 281px;
 }
@@ -213,9 +218,17 @@ main > section.active {
 #home .info h1 span {
   color: #b6b7ba;
 }
-#home .info h2 {
-  color: #b6b7ba;
+#home .info .field {
+  display: flex;
+  align-items: center;
   margin-bottom: 16px;
+}
+#home .info .field h2 {
+  color: #b6b7ba;
+  margin: 0;
+}
+#home .info .field span {
+  font-size: 21px;
 }
 #home .info p {
   max-width: 430px;
@@ -262,6 +275,7 @@ main > section.active {
   height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 #home .image img {
   border-radius: 8px;

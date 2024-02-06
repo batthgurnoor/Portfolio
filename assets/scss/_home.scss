@@ -1,4 +1,7 @@
 #home {
+  background-image: url("../images/bg-shape.png");
+  background-repeat: no-repeat;
+  background-position: 40vh -24px;
   .info {
     padding-top: 281px;
 
@@ -13,9 +16,17 @@
       }
     }
 
-    h2 {
-      color: $gray;
+    .field {
+      display: flex;
+      align-items: center;
       margin-bottom: 16px;
+      h2 {
+        color: $gray;
+        margin: 0;
+      }
+      span {
+        font-size: 21px;
+      }
     }
 
     p {
@@ -73,6 +84,7 @@
     height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 
     img {
       border-radius: 8px;
