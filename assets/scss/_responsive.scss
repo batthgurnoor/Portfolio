@@ -6,6 +6,16 @@
     }
   }
   #home {
+    .info {
+      padding-top: 80px;
+
+      .socials {
+        margin-top: 120px;
+        ul {
+          justify-content: space-between;
+        }
+      }
+    }
     .image {
       justify-content: flex-start;
       height: unset;
@@ -74,6 +84,13 @@
           justify-content: space-between;
         }
       }
+    }
+  }
+}
+
+@media (min-width: 991px) {
+  #home {
+    .info {
     }
   }
 }
