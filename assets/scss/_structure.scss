@@ -11,5 +11,13 @@ main {
     &.active {
       display: block;
     }
+    header.has-bg {
+      position: relative;
+      img {
+        position: absolute;
+        top: 15px;
+        left: -72px;
+      }
+    }
   }
 }

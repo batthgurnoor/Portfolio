@@ -16,15 +16,16 @@ h2 {
   font-size: 2.5vw;
   font-weight: 700;
 }
-p {
-  font-family: "Ubuntu", sans-serif;
-  font-size: 1.37vw;
-}
 
 body {
+  font-family: "Ubuntu", sans-serif;
   background: $dark_bg;
 }
 
 * {
   color: White;
+}
+p {
+  font-size: 1.37vw;
+  line-height: 175%;
 }
