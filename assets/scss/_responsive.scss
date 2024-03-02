@@ -66,11 +66,10 @@
 
   main {
     padding-left: 0;
-    padding-top: 50px;
 
-    > section {
-      padding-right: 32px;
-      padding-left: 32px;
+    > section header.has-bg img {
+      left: -13px;
+      top: -1px;
     }
   }
   #home {
@@ -88,7 +87,23 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (max-width: 546px) {
+  #about_me {
+    .hero .info .buttons {
+      flex-direction: column;
+      a {
+        width: 100%;
+        text-align: center;
+      }
+      .btn-custom-dark {
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
   #home {
     .container {
       max-width: 100%;
