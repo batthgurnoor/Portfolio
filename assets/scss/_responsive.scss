@@ -25,6 +25,14 @@
   }
 }
 
+@media (min-width: 992px) {
+  #about_me {
+    .hero .info {
+      padding-left: 60px;
+    }
+  }
+}
+
 @media (max-width: 767px) {
   #sidebar {
     background: darken($secondary, 30);
@@ -99,14 +107,6 @@
         margin-top: 10px;
         margin-bottom: 20px;
       }
-    }
-  }
-}
-
-@media (min-width: 1400px) {
-  #home {
-    .container {
-      max-width: 100%;
     }
   }
 }
