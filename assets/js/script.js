@@ -31,7 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
     console.error("Atropos element not found");
   }
 });
-
 var typed = new Typed(".field h2", {
   strings: ["Developer", "Photographer", "Web Designer"],
   loop: true,
