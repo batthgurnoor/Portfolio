@@ -17,7 +17,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin: 0;
   padding: 0;
 }
@@ -73,6 +74,7 @@ main > section.active {
 }
 main > section header.has-bg {
   position: relative;
+  display: inline-flex;
 }
 main > section header.has-bg img {
   position: absolute;
@@ -80,7 +82,212 @@ main > section header.has-bg img {
   left: -72px;
   z-index: -1;
 }
+main > section header.custom {
+  position: relative;
+  text-align: center;
+  margin-bottom: 42px;
+}
+main > section header.custom:before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #1e1e20;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+main > section header.custom H2 {
+  padding: 0 24px;
+  display: inline-block;
+  background: #151516;
+}
+main > section .meteor-shower {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+main > section .meteor-shower .meteor:nth-child(1) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 61vh;
+  left: 14vw;
+  animation: meteor 7435ms linear infinite;
+  animation-delay: 954ms;
+}
+main > section .meteor-shower .meteor:nth-child(2) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 35vh;
+  left: 90vw;
+  animation: meteor 3460ms linear infinite;
+  animation-delay: 2629ms;
+}
+main > section .meteor-shower .meteor:nth-child(3) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 12vh;
+  left: 20vw;
+  animation: meteor 6225ms linear infinite;
+  animation-delay: 4676ms;
+}
+main > section .meteor-shower .meteor:nth-child(4) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 27vh;
+  left: 55vw;
+  animation: meteor 5940ms linear infinite;
+  animation-delay: 1632ms;
+}
+main > section .meteor-shower .meteor:nth-child(5) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 98vh;
+  left: 2vw;
+  animation: meteor 7979ms linear infinite;
+  animation-delay: 1987ms;
+}
+main > section .meteor-shower .meteor:nth-child(6) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 10vh;
+  left: 88vw;
+  animation: meteor 6576ms linear infinite;
+  animation-delay: 3401ms;
+}
+main > section .meteor-shower .meteor:nth-child(7) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 6vh;
+  left: 18vw;
+  animation: meteor 5941ms linear infinite;
+  animation-delay: 3876ms;
+}
+main > section .meteor-shower .meteor:nth-child(8) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 7vh;
+  left: 33vw;
+  animation: meteor 3191ms linear infinite;
+  animation-delay: 3087ms;
+}
+main > section .meteor-shower .meteor:nth-child(9) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 81vh;
+  left: 11vw;
+  animation: meteor 5024ms linear infinite;
+  animation-delay: 1323ms;
+}
+main > section .meteor-shower .meteor:nth-child(10) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 73vh;
+  left: 49vw;
+  animation: meteor 3212ms linear infinite;
+  animation-delay: 3469ms;
+}
+main > section .meteor-shower .meteor:nth-child(11) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 80vh;
+  left: 91vw;
+  animation: meteor 7812ms linear infinite;
+  animation-delay: 2466ms;
+}
+main > section .meteor-shower .meteor:nth-child(12) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 4vh;
+  left: 11vw;
+  animation: meteor 7204ms linear infinite;
+  animation-delay: 4815ms;
+}
+main > section .meteor-shower .meteor:nth-child(13) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 31vh;
+  left: 70vw;
+  animation: meteor 4376ms linear infinite;
+  animation-delay: 2699ms;
+}
+main > section .meteor-shower .meteor:nth-child(14) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 51vh;
+  left: 97vw;
+  animation: meteor 7536ms linear infinite;
+  animation-delay: 4469ms;
+}
+main > section .meteor-shower .meteor:nth-child(15) {
+  position: absolute;
+  background-image: url("../images/meteor.png");
+  width: 60px;
+  height: 49px;
+  opacity: 0;
+  top: 76vh;
+  left: 13vw;
+  animation: meteor 5047ms linear infinite;
+  animation-delay: 2210ms;
+}
 
+@keyframes meteor {
+  0% {
+    transform: translate(300px, -300px);
+    opacity: 1;
+  }
+  20% {
+    transform: translate(-300px, 300px);
+    opacity: 0;
+  }
+}
 .btn-custom-blue, .btn-custom-dark {
   display: inline-block;
   background: #262f48;
@@ -322,191 +529,7 @@ main > section header.has-bg img {
   max-width: 100%;
   transition: all 0.3s;
 }
-#home .meteor-shower {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  right: 0;
-  top: 0;
-  overflow: hidden;
-  z-index: -1;
-}
-#home .meteor-shower .meteor:nth-child(1) {
-  position: absolute;
-  background-image: url("../images/meteor.png");
-  width: 60px;
-  height: 49px;
-  opacity: 0;
-  top: 31vh;
-  left: 73vw;
-  animation: meteor 3086ms linear infinite;
-  animation-delay: 6ms;
-}
-#home .meteor-shower .meteor:nth-child(2) {
-  position: absolute;
-  background-image: url("../images/meteor.png");
-  width: 60px;
-  height: 49px;
-  opacity: 0;
-  top: 44vh;
-  left: 5vw;
-  animation: meteor 3800ms linear infinite;
-  animation-delay: 1622ms;
-}
-#home .meteor-shower .meteor:nth-child(3) {
-  position: absolute;
-  background-image: url("../images/meteor.png");
-  width: 60px;
-  height: 49px;
-  opacity: 0;
-  top: 61vh;
-  left: 82vw;
-  animation: meteor 3229ms linear infinite;
-  animation-delay: 4120ms;
-}
-#home .meteor-shower .meteor:nth-child(4) {
-  position: absolute;
-  background-image: url("../images/meteor.png");
-  width: 60px;
-  height: 49px;
-  opacity: 0;
-  top: 75vh;
-  left: 20vw;
-  animation: meteor 6443ms linear infinite;
-  animation-delay: 3110ms;
-}
-#home .meteor-shower .meteor:nth-child(5) {
-  position: absolute;
-  background-image: url("../images/meteor.png");
-  width: 60px;
-  height: 49px;
-  opacity: 0;
-  top: 22vh;
-  left: 99vw;
-  animation: meteor 4031ms linear infinite;
-  animation-delay: 1184ms;
-}
-#home .meteor-shower .meteor:nth-child(6) {
-  position: absolute;
-  background-image: url("../images/meteor.png");
-  width: 60px;
-  height: 49px;
-  opacity: 0;
-  top: 33vh;
-  left: 80vw;
-  animation: meteor 6982ms linear infinite;
-  animation-delay: 3694ms;
-}
-#home .meteor-shower .meteor:nth-child(7) {
-  position: absolute;
-  background-image: url("../images/meteor.png");
-  width: 60px;
-  height: 49px;
-  opacity: 0;
-  top: 97vh;
-  left: 58vw;
-  animation: meteor 5184ms linear infinite;
-  animation-delay: 4966ms;
-}
-#home .meteor-shower .meteor:nth-child(8) {
-  position: absolute;
-  background-image: url("../images/meteor.png");
-  width: 60px;
-  height: 49px;
-  opacity: 0;
-  top: 12vh;
-  left: 23vw;
-  animation: meteor 6052ms linear infinite;
-  animation-delay: 2926ms;
-}
-#home .meteor-shower .meteor:nth-child(9) {
-  position: absolute;
-  background-image: url("../images/meteor.png");
-  width: 60px;
-  height: 49px;
-  opacity: 0;
-  top: 46vh;
-  left: 31vw;
-  animation: meteor 3876ms linear infinite;
-  animation-delay: 4305ms;
-}
-#home .meteor-shower .meteor:nth-child(10) {
-  position: absolute;
-  background-image: url("../images/meteor.png");
-  width: 60px;
-  height: 49px;
-  opacity: 0;
-  top: 22vh;
-  left: 47vw;
-  animation: meteor 7244ms linear infinite;
-  animation-delay: 75ms;
-}
-#home .meteor-shower .meteor:nth-child(11) {
-  position: absolute;
-  background-image: url("../images/meteor.png");
-  width: 60px;
-  height: 49px;
-  opacity: 0;
-  top: 79vh;
-  left: 90vw;
-  animation: meteor 5344ms linear infinite;
-  animation-delay: 1933ms;
-}
-#home .meteor-shower .meteor:nth-child(12) {
-  position: absolute;
-  background-image: url("../images/meteor.png");
-  width: 60px;
-  height: 49px;
-  opacity: 0;
-  top: 21vh;
-  left: 18vw;
-  animation: meteor 5724ms linear infinite;
-  animation-delay: 230ms;
-}
-#home .meteor-shower .meteor:nth-child(13) {
-  position: absolute;
-  background-image: url("../images/meteor.png");
-  width: 60px;
-  height: 49px;
-  opacity: 0;
-  top: 50vh;
-  left: 9vw;
-  animation: meteor 4424ms linear infinite;
-  animation-delay: 4154ms;
-}
-#home .meteor-shower .meteor:nth-child(14) {
-  position: absolute;
-  background-image: url("../images/meteor.png");
-  width: 60px;
-  height: 49px;
-  opacity: 0;
-  top: 89vh;
-  left: 69vw;
-  animation: meteor 4340ms linear infinite;
-  animation-delay: 2236ms;
-}
-#home .meteor-shower .meteor:nth-child(15) {
-  position: absolute;
-  background-image: url("../images/meteor.png");
-  width: 60px;
-  height: 49px;
-  opacity: 0;
-  top: 39vh;
-  left: 86vw;
-  animation: meteor 4943ms linear infinite;
-  animation-delay: 1407ms;
-}
 
-@keyframes meteor {
-  0% {
-    transform: translate(300px, -300px);
-    opacity: 1;
-  }
-  20% {
-    transform: translate(-300px, 300px);
-    opacity: 0;
-  }
-}
 #my-atropos .atropos-shadow {
   box-shadow: 0 20px 20px 50px rgba(226, 225, 225, 0.2); /* Example - Adjust based on your needs */
 }
@@ -549,27 +572,6 @@ main > section header.has-bg img {
 }
 #about_me .hero .info .buttons a:first-child {
   margin-right: 24px;
-}
-#about_me header.custom {
-  position: relative;
-  text-align: center;
-  margin-bottom: 42px;
-}
-#about_me header.custom:before {
-  content: "";
-  width: 100%;
-  height: 2px;
-  background: #1e1e20;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: -1;
-}
-#about_me header.custom H2 {
-  padding: 0 24px;
-  display: inline-block;
-  background: #151516;
 }
 #about_me .rate {
   display: flex;
@@ -700,6 +702,116 @@ main > section header.has-bg img {
   transform: scale(1.1);
 }
 
+#resume {
+  background-image: url("../images/bg-shape.png");
+  background-repeat: no-repeat;
+  background-position: 40vh 375px;
+  padding-bottom: 196px;
+}
+#resume header.has-bg {
+  margin-bottom: 64px;
+}
+#resume .items .item {
+  display: flex;
+}
+#resume .items .item.last .icon i,
+#resume .items .item.last .box .title {
+  color: #658df2;
+}
+#resume .items .item:hover .icon,
+#resume .items .item:hover .icon:before {
+  background-color: rgba(11, 44, 128, 0.4);
+}
+#resume .items .item:hover .box {
+  background: transparent;
+}
+#resume .items .item:hover .box:before {
+  border-right-color: rgba(11, 44, 128, 0.4);
+}
+#resume .items .item:hover .box:after {
+  width: 100%;
+}
+#resume .items .item:not(:last-child) {
+  margin-bottom: 42px;
+}
+#resume .items .item .icon {
+  position: relative;
+  background: rgba(255, 255, 255, 0.0509803922);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 46px;
+  margin-top: 23px;
+  transition: all 0.3s;
+}
+#resume .items .item .icon i {
+  transform: scale(1.5);
+}
+#resume .items .item .icon:before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 126px;
+  background: #1e1e20;
+  top: 70px;
+}
+#resume .items .item .box {
+  position: relative;
+  padding: 32px;
+  background: rgba(30, 30, 32, 0.75);
+  border-radius: 8px;
+  text-align: left;
+  width: 440px;
+  z-index: 1;
+  flex-grow: 1;
+  transition: all 0.3s;
+}
+#resume .items .item .box:before {
+  content: "";
+  position: absolute;
+  border-right: 9px solid rgba(30, 30, 32, 0.75);
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  left: -9px;
+  top: 36px;
+  transition: all 0.3s;
+}
+#resume .items .item .box::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 8px;
+  background: rgba(11, 44, 128, 0.4);
+  z-index: -1;
+  transition: all 0.3s;
+}
+#resume .items .item .box .year {
+  display: inline-flex;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+#resume .items .item .box .title {
+  margin-bottom: 16px;
+}
+#resume .items .item .box p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #b6b7ba;
+}
+#resume .Education {
+  padding-right: 34px;
+}
+#resume .Experince {
+  padding-left: 34px;
+}
+
 @media (max-width: 991px) {
   main > section {
     padding-right: 32px;
@@ -779,8 +891,6 @@ main > section header.has-bg img {
   #home .info .socials ul {
     justify-content: space-between;
   }
-}
-@media (max-width: 546px) {
   #about_me .hero .info .buttons {
     flex-direction: column;
   }
@@ -792,9 +902,37 @@ main > section header.has-bg img {
     margin-top: 10px;
     margin-bottom: 20px;
   }
+  #resume .items .item {
+    position: relative;
+  }
+  #resume .items .item .icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    left: -23px;
+    margin-top: 0;
+    background: rgba(30, 30, 32, 0.75);
+  }
+  #resume .items .item .icon:before {
+    display: none;
+  }
+  #resume .items .item .box:before {
+    display: none;
+  }
+  #resume .Education,
+  #resume .Experience {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 }
 @media (min-width: 1400px) {
   #about_me .languages-skills .languages-key-skills {
     padding-right: 100px;
+  }
+}
+@media (max-width: 1199px) {
+  #resume .Experience {
+    margin-top: 100px;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -93,9 +93,6 @@
       }
     }
   }
-}
-
-@media (max-width: 546px) {
   #about_me {
     .hero .info .buttons {
       flex-direction: column;
@@ -109,12 +106,48 @@
       }
     }
   }
+  #resume {
+    .items {
+      .item {
+        position: relative;
+
+        .icon {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          z-index: 2;
+          left: -23px;
+          margin-top: 0;
+          background: rgba($color: $secondary, $alpha: 0.75);
+
+          &:before {
+            display: none;
+          }
+        }
+        .box:before {
+          display: none;
+        }
+      }
+    }
+    .Education,
+    .Experience {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+  }
 }
 
 @media (min-width: 1400px) {
   #about_me {
     .languages-skills .languages-key-skills {
       padding-right: 100px;
+    }
+  }
+}
+@media (max-width: 1199px) {
+  #resume {
+    .Experience {
+      margin-top: 100px;
     }
   }
 }
