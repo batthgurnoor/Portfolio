@@ -1,4 +1,7 @@
 #sidebar {
+  &.blur {
+    filter: blur(2px);
+  }
   position: fixed;
   height: 100vh;
   padding-right: 39px;
