@@ -57,6 +57,16 @@
           transform: scale(1.5);
         }
 
+        &.endd {
+          &:before {
+            content: "";
+            position: absolute;
+            width: 0px;
+            height: 126px;
+            background: $secondary;
+            top: 70px;
+          }
+        }
         &:before {
           content: "";
           position: absolute;
