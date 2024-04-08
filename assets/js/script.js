@@ -41,6 +41,28 @@ for (let i = 1; i < 15; i++) {
   meteor.classList = "meteor";
   document.querySelector("#home .meteor-shower").append(meteor);
 }
+for (let i = 1; i < 15; i++) {
+  let meteor = document.createElement("span");
+  meteor.classList = "meteor";
+  document.querySelector("#about_me .meteor-shower").append(meteor);
+}
+for (let i = 1; i < 15; i++) {
+  let meteor = document.createElement("span");
+  meteor.classList = "meteor";
+  document.querySelector("#resume .meteor-shower").append(meteor);
+}
+
+for (let i = 1; i < 15; i++) {
+  let meteor = document.createElement("span");
+  meteor.classList = "meteor";
+  document.querySelector("#testimonial .meteor-shower").append(meteor);
+}
+for (let i = 1; i < 15; i++) {
+  let meteor = document.createElement("span");
+  meteor.classList = "meteor";
+
+  document.querySelector("#contact .meteor-shower").append(meteor);
+}
 
 const shuffleInstance = new Shuffle(document.querySelector("#work .work-items"), {
   itemSelector: ".item",
