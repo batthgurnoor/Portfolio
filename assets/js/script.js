@@ -4,21 +4,15 @@ navLinks.forEach((item) => {
   item.addEventListener("click", function () {
     console.log(item);
     document.querySelector("nav ul li a.active").classList.remove("active");
-    document
-      .querySelector(`nav ul li a[href='${item.getAttribute("href")}']`)
-      .classList.add("active");
+    document.querySelector(`nav ul li a[href='${item.getAttribute("href")}']`).classList.add("active");
     document.querySelector("main >section.active").classList.remove("active");
-    document
-      .querySelector(`main>section${item.getAttribute("href")}`)
-      .classList.add("active");
+    document.querySelector(`main>section${item.getAttribute("href")}`).classList.add("active");
   });
 });
 
-document
-  .querySelector("#sidebar .toggle-sidebar")
-  .addEventListener("click", function () {
-    document.querySelector("#sidebar").classList.toggle("open");
-  });
+document.querySelector("#sidebar .toggle-sidebar").addEventListener("click", function () {
+  document.querySelector("#sidebar").classList.toggle("open");
+});
 
 document.addEventListener("DOMContentLoaded", function () {
   var atroposElement = document.querySelector(".my-atropos");
@@ -48,12 +42,9 @@ for (let i = 1; i < 15; i++) {
   document.querySelector("#home .meteor-shower").append(meteor);
 }
 
-const shuffleInstance = new Shuffle(
-  document.querySelector("#work .work-items"),
-  {
-    itemSelector: ".item",
-  }
-);
+const shuffleInstance = new Shuffle(document.querySelector("#work .work-items"), {
+  itemSelector: ".item",
+});
 
 const filterButtons = document.querySelectorAll("#work .filters button");
 filterButtons.forEach((item) => {
@@ -76,19 +67,15 @@ const workElements = document.querySelectorAll("#work .work-items .wrap");
 workElements.forEach((item) => {
   item.addEventListener("click", function () {
     $("#workModal").modal("show");
-    document
-      .querySelector("#workModal .modal-body img")
-      .setAttribute("src", item.getAttribute("data-image"));
+    document.querySelector("#workModal .modal-body img").setAttribute("src", item.getAttribute("data-image"));
 
-    document.querySelector("#workModal .modal-body .title").innerText =
-      item.getAttribute("data-title");
+    document.querySelector("#workModal .modal-body .title").innerText = item.getAttribute("data-title");
     document.querySelector("#workModal .modal-body .description").innerText =
       item.getAttribute("data-description");
     document.querySelector("#workModal .modal-body .client .value").innerText =
       item.getAttribute("data-client");
-    document.querySelector(
-      "#workModal .modal-body .completed .value"
-    ).innerText = item.getAttribute("data-completed");
+    document.querySelector("#workModal .modal-body .completed .value").innerText =
+      item.getAttribute("data-completed");
     document.querySelector("#workModal .modal-body .skills .value").innerText =
       item.getAttribute("data-skills");
     document
@@ -104,4 +91,16 @@ $("#workModal").on("show.bs.modal", function (e) {
 $("#workModal").on("hidden.bs.modal", function (e) {
   document.getElementById("work").classList.remove("blur");
   document.getElementById("sidebar").classList.remove("blur");
+});
+
+let testimonialImages = document.querySelectorAll("#testimonial .images img");
+testimonialImages.forEach((item, index) => {
+  let position = index + 1;
+  item.addEventListener("click", function () {
+    document.querySelector("#testimonial .images img.active").classList.remove("active");
+    document.querySelector(`#testimonial .images img:nth-child(${position})`).classList.add("active");
+    document.querySelector("#testimonial .comments .item.active").classList.remove("active");
+    document.querySelector(`#testimonial .comments .item:nth-child(${position})`).classList.add("active");
+  });
+  console.log(index, item);
 });
