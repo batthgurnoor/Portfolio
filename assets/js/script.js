@@ -154,6 +154,14 @@ form.addEventListener("submit", function (event) {
     (response) => {
       console.log("SUCCESS!", response.status, response.text);
       if (response.text == "OK") {
+        document.getElementById("textInput").value = "";
+        document.getElementById("emailInput").value = "";
+        document.getElementById("subjectInput").value = "";
+        document.getElementById("messageInput").value = "";
+        formItems.forEach((item) => {
+          item.parentElement.classList.remove("focus");
+        });
+        window.alert("Message has been sent!");
       }
     },
     (err) => {
