@@ -120,22 +120,19 @@ function initalEmail() {
   emailjs.init("XOA7aiCVVzp5pQLQF");
 }
 
-const templateParams = {
-  to_name: "Gurnoor Singh Batth ",
-  from_name: document.getElementById("textInput").value,
-  subject: document.getElementById("subjectInput").value,
-  message:
-    "Email - " +
-    document.getElementById("EmailInput").value +
-    "\n Message - " +
-    document.getElementById("messageInput").value,
-};
+const name1 = document.getElementById("textInput").value;
+const email1 = document.getElementById("emailInput").value;
+const subject1 = document.getElementById("subjectInput").value;
+const message1 = document.getElementById("messageInput").value;
 const form = document.getElementById("message-form");
 form.addEventListener("submit", function (event) {
   event.preventDefault();
-  emailjs.send("service_j4lg72v", "template_68n9p19", templateParams, "XOA7aiCVVzp5pQLQF").then(
+
+  emailjs.sendForm("service_j4lg72v", "template_68n9p19", this, "XOA7aiCVVzp5pQLQF").then(
     (response) => {
       console.log("SUCCESS!", response.status, response.text);
+      if (response.text == "OK") {
+      }
     },
     (err) => {
       console.log("FAILED...", err);
