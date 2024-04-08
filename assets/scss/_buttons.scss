@@ -9,6 +9,7 @@
   position: relative;
   overflow: hidden;
   z-index: 1;
+  border: none;
 
   &:before {
     content: "";
@@ -28,7 +29,7 @@
     color: white;
 
     &:before {
-      transform: translate(-50%, -50%) scale(2);
+      transform: translate(-50%, -50%) scale(3);
     }
   }
 }

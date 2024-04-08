@@ -102,5 +102,43 @@ testimonialImages.forEach((item, index) => {
     document.querySelector("#testimonial .comments .item.active").classList.remove("active");
     document.querySelector(`#testimonial .comments .item:nth-child(${position})`).classList.add("active");
   });
-  console.log(index, item);
+});
+
+let formItems = document.querySelectorAll("#contact .form input, #contact .form textarea");
+formItems.forEach((item) => {
+  item.addEventListener("click", function () {
+    item.parentElement.classList.add("focus");
+  });
+  item.addEventListener("blur", function () {
+    if (!item.value) {
+      item.parentElement.classList.remove("focus");
+    }
+  });
+});
+
+function initalEmail() {
+  emailjs.init("XOA7aiCVVzp5pQLQF");
+}
+
+const templateParams = {
+  to_name: "Gurnoor Singh Batth ",
+  from_name: document.getElementById("textInput").value,
+  subject: document.getElementById("subjectInput").value,
+  message:
+    "Email - " +
+    document.getElementById("EmailInput").value +
+    "\n Message - " +
+    document.getElementById("messageInput").value,
+};
+const form = document.getElementById("message-form");
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  emailjs.send("service_j4lg72v", "template_68n9p19", templateParams, "XOA7aiCVVzp5pQLQF").then(
+    (response) => {
+      console.log("SUCCESS!", response.status, response.text);
+    },
+    (err) => {
+      console.log("FAILED...", err);
+    }
+  );
 });
