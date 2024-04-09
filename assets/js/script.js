@@ -131,6 +131,9 @@ formItems.forEach((item) => {
   item.addEventListener("click", function () {
     item.parentElement.classList.add("focus");
   });
+  item.addEventListener("keydown", function () {
+    item.parentElement.classList.add("focus");
+  });
   item.addEventListener("blur", function () {
     if (!item.value) {
       item.parentElement.classList.remove("focus");
