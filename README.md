@@ -36,20 +36,33 @@ A responsive portfolio website for, showcasing programming projects, photography
 - **Option 1 – Open hosted site directly**
   - Open `https://batthgurnoor.github.io/Portfolio` in your browser (double-click or drag into a browser window).
 
-```markdown
+
 ### Screenshots
 
-**Home**
-![Home](screenshots/home.png)
-
-**About**
-![About](screenshots/about.png)
-
-**My Work**
-![My Work](screenshots/work.png)
-
-**Contact**
-![Contact](screenshots/contact.png)
+**Home Page**
+```html
+<video src="screenshots/Home.mp4" controls width="800">
+  Your browser does not support the video tag.
+</video>
 ```
 
+**About Page**
+```html
+<video src="screenshots/portfolio-demo.mp4" controls width="800">
+  Your browser does not support the video tag.
+</video>
+```
 
+**My Work Page**
+```html
+<video src="screenshots/portfolio-demo.mp4" controls width="800">
+  Your browser does not support the video tag.
+</video>
+```
+
+**Contact Page**
+```html
+<video src="screenshots/portfolio-demo.mp4" controls width="800">
+  Your browser does not support the video tag.
+</video>
+```
