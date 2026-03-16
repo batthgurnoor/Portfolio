@@ -85,10 +85,14 @@ function workFilter() {
 }
 
 const workElements = document.querySelectorAll("#work .work-items .wrap");
+const workModalElement = document.getElementById("workModal");
+const workModal = workModalElement ? new bootstrap.Modal(workModalElement) : null;
 
 workElements.forEach((item) => {
   item.addEventListener("click", function () {
-    $("#workModal").modal("show");
+    if (workModal) {
+      workModal.show();
+    }
     document.querySelector("#workModal .modal-body img").setAttribute("src", item.getAttribute("data-image"));
 
     document.querySelector("#workModal .modal-body .title").innerText = item.getAttribute("data-title");
@@ -106,14 +110,17 @@ workElements.forEach((item) => {
   });
 });
 
-$("#workModal").on("show.bs.modal", function (e) {
-  document.getElementById("work").classList.add("blur");
-  document.getElementById("sidebar").classList.add("blur");
-});
-$("#workModal").on("hidden.bs.modal", function (e) {
-  document.getElementById("work").classList.remove("blur");
-  document.getElementById("sidebar").classList.remove("blur");
-});
+if (workModalElement) {
+  workModalElement.addEventListener("show.bs.modal", function () {
+    document.getElementById("work").classList.add("blur");
+    document.getElementById("sidebar").classList.add("blur");
+  });
+
+  workModalElement.addEventListener("hidden.bs.modal", function () {
+    document.getElementById("work").classList.remove("blur");
+    document.getElementById("sidebar").classList.remove("blur");
+  });
+}
 
 let testimonialImages = document.querySelectorAll("#testimonial .images img");
 testimonialImages.forEach((item, index) => {
@@ -172,3 +179,16 @@ form.addEventListener("submit", function (event) {
     }
   );
 });
+
+function toggleMode(){
+  let theme = document.querySelector("html").getAttribute("theme");
+  if(theme == "dark"){
+    theme = "light";
+    
+  }
+  else{
+    theme = "dark";
+   
+  }
+  document.querySelector("html").setAttribute("theme", theme);
+}

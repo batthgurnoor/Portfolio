@@ -29,6 +29,7 @@ h4 {
 body {
   font-family: "Ubuntu", sans-serif;
   background: $dark_bg;
+  transition: background 0.3s;
 }
 
 * {
@@ -36,4 +37,8 @@ body {
 }
 p {
   line-height: 175%;
+}
+
+html {
+  --bg-shape: url(../images/bg-shape.png);
 }

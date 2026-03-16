@@ -1,0 +1,15 @@
+{
+    "liveSassCompile.settings.autoprefix": [
+
+    ],
+    "liveSassCompile.settings.compileOnWatch": true,
+    "liveSassCompile.settings.formats": [
+        
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": null,
+            "savePathReplacementPairs": null
+        }
+    ]
+}
