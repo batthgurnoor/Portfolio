@@ -223,9 +223,50 @@ html[theme="light"] {
             }
             
         }
-    }
-    .writer span.field{
+        .writer span.field{
              color: $gray_light !important ;   
             }
+    }
+
+    #contact {
+        .container {
+            .form {
+                .form-item{
+
+                    &:before{
+                        background-color: $secondary_gray_light;
+                    }
+                    &:after{
+                        background-color: $primary;
+                    }
+                     label{
+                        color:$gray_light;
+                     }
+                    }
+            }
+            .info{
+                .item{
+                    &:hover{
+                        i{
+                            background:$primary;
+                            color:#FFF;
+                        }
+                    }
+                    i{
+                        background: $secondary_gray_light;
+                    }
+                    .text{
+                        .title{
+                        color:$gray_light;
+                    }
+                    a{
+                        color:$paragraph_light;
+                    }
+                }
+                }
+            }
+        }
+    }
+    
         
 }
