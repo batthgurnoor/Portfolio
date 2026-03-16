@@ -270,3 +270,16 @@ html[theme="light"] {
     
         
 }
+
+@media (max-width:767px){
+    html[theme="light"]{
+        #sidebar{
+            background: lighten($primary, 25%);
+
+            .toggle-sidebar{
+                background: lighten($primary, 25%);
+            }
+        }
+    }
+
+}

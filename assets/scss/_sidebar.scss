@@ -63,14 +63,14 @@
             opacity: 0;
             top: 35%;
             left: 50%;
-            transform: translate(-50%, -50%) scale(0);
+            transform: translate(-200%, -38%) scale(0);
             transition: all 0.3s;
           }
 
           &.active {
             &:before {
               opacity: 0.15;
-              transform: translate(-50%, -50%) scale(1);
+              transform: translate(-150%, -38%) scale(.75)
             }
 
             i {
