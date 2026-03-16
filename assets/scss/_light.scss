@@ -162,9 +162,57 @@ html[theme="light"] {
     p{
         color:$gray_light;
     }
-
    }
    }
- }
+    }
 
+    #work{
+        .filters{
+            button{
+                &.active{
+                    background:$secondary_gray_light;
+                    h4
+                    {
+                        color: $paragraph_light;
+                    }
+                }
+                h4{
+                    color: $gray_light;
+                }
+            }
+        }
+        .work-items .item .wrap:after{
+            background: rgba(#fff, 0.8);
+        }
+    }
+    .modal#workModal {
+        .modal-dialog .modal-content{
+            background: #fff;
+
+            .modal-body {
+                .modal-close-button{
+                    background: $secondary_gray_light;
+                    border: 0.1px solid rgba(0, 0, 0, 0.5) ;
+
+                    &:hover{
+                        background: $primary;
+                        border: 0.1px solid rgba( $primary, 0.5) ;
+
+                        i{
+                            color:#fff
+                        }
+                    }
+            }
+            .left p{
+                color:$gray_light;
+            }
+            .right .value{
+                 color:$gray_light;
+            }
+             
+        }
+        }
+
+    }
+        
 }
