@@ -131,10 +131,10 @@ main > section .meteor-shower .meteor:nth-child(1) {
   width: 60px;
   height: 49px;
   opacity: 0;
-  top: 61vh;
-  left: 58vw;
-  animation: meteor 7802ms linear infinite;
-  animation-delay: 3621ms;
+  top: 46vh;
+  left: 77vw;
+  animation: meteor 4763ms linear infinite;
+  animation-delay: 3508ms;
 }
 main > section .meteor-shower .meteor:nth-child(2) {
   position: absolute;
@@ -142,10 +142,10 @@ main > section .meteor-shower .meteor:nth-child(2) {
   width: 60px;
   height: 49px;
   opacity: 0;
-  top: 73vh;
-  left: 36vw;
-  animation: meteor 7578ms linear infinite;
-  animation-delay: 396ms;
+  top: 9vh;
+  left: 39vw;
+  animation: meteor 7194ms linear infinite;
+  animation-delay: 3315ms;
 }
 main > section .meteor-shower .meteor:nth-child(3) {
   position: absolute;
@@ -153,10 +153,10 @@ main > section .meteor-shower .meteor:nth-child(3) {
   width: 60px;
   height: 49px;
   opacity: 0;
-  top: 23vh;
-  left: 16vw;
-  animation: meteor 7815ms linear infinite;
-  animation-delay: 1028ms;
+  top: 20vh;
+  left: 24vw;
+  animation: meteor 6789ms linear infinite;
+  animation-delay: 1198ms;
 }
 main > section .meteor-shower .meteor:nth-child(4) {
   position: absolute;
@@ -164,10 +164,10 @@ main > section .meteor-shower .meteor:nth-child(4) {
   width: 60px;
   height: 49px;
   opacity: 0;
-  top: 29vh;
-  left: 51vw;
-  animation: meteor 3899ms linear infinite;
-  animation-delay: 1971ms;
+  top: 84vh;
+  left: 58vw;
+  animation: meteor 4092ms linear infinite;
+  animation-delay: 4332ms;
 }
 main > section .meteor-shower .meteor:nth-child(5) {
   position: absolute;
@@ -175,10 +175,10 @@ main > section .meteor-shower .meteor:nth-child(5) {
   width: 60px;
   height: 49px;
   opacity: 0;
-  top: 30vh;
-  left: 61vw;
-  animation: meteor 4685ms linear infinite;
-  animation-delay: 3831ms;
+  top: 19vh;
+  left: 59vw;
+  animation: meteor 7025ms linear infinite;
+  animation-delay: 458ms;
 }
 main > section .meteor-shower .meteor:nth-child(6) {
   position: absolute;
@@ -186,10 +186,10 @@ main > section .meteor-shower .meteor:nth-child(6) {
   width: 60px;
   height: 49px;
   opacity: 0;
-  top: 24vh;
-  left: 47vw;
-  animation: meteor 4084ms linear infinite;
-  animation-delay: 4335ms;
+  top: 88vh;
+  left: 35vw;
+  animation: meteor 3538ms linear infinite;
+  animation-delay: 3726ms;
 }
 main > section .meteor-shower .meteor:nth-child(7) {
   position: absolute;
@@ -197,10 +197,10 @@ main > section .meteor-shower .meteor:nth-child(7) {
   width: 60px;
   height: 49px;
   opacity: 0;
-  top: 93vh;
-  left: 90vw;
-  animation: meteor 4444ms linear infinite;
-  animation-delay: 1688ms;
+  top: 70vh;
+  left: 10vw;
+  animation: meteor 6584ms linear infinite;
+  animation-delay: 4711ms;
 }
 main > section .meteor-shower .meteor:nth-child(8) {
   position: absolute;
@@ -208,10 +208,10 @@ main > section .meteor-shower .meteor:nth-child(8) {
   width: 60px;
   height: 49px;
   opacity: 0;
-  top: 68vh;
-  left: 81vw;
-  animation: meteor 4002ms linear infinite;
-  animation-delay: 4666ms;
+  top: 17vh;
+  left: 31vw;
+  animation: meteor 5370ms linear infinite;
+  animation-delay: 877ms;
 }
 main > section .meteor-shower .meteor:nth-child(9) {
   position: absolute;
@@ -219,10 +219,10 @@ main > section .meteor-shower .meteor:nth-child(9) {
   width: 60px;
   height: 49px;
   opacity: 0;
-  top: 97vh;
-  left: 37vw;
-  animation: meteor 5562ms linear infinite;
-  animation-delay: 3930ms;
+  top: 84vh;
+  left: 100vw;
+  animation: meteor 7684ms linear infinite;
+  animation-delay: 3568ms;
 }
 main > section .meteor-shower .meteor:nth-child(10) {
   position: absolute;
@@ -230,10 +230,10 @@ main > section .meteor-shower .meteor:nth-child(10) {
   width: 60px;
   height: 49px;
   opacity: 0;
-  top: 72vh;
-  left: 14vw;
-  animation: meteor 7780ms linear infinite;
-  animation-delay: 1667ms;
+  top: 64vh;
+  left: 5vw;
+  animation: meteor 4038ms linear infinite;
+  animation-delay: 4774ms;
 }
 main > section .meteor-shower .meteor:nth-child(11) {
   position: absolute;
@@ -241,10 +241,10 @@ main > section .meteor-shower .meteor:nth-child(11) {
   width: 60px;
   height: 49px;
   opacity: 0;
-  top: 5vh;
-  left: 76vw;
-  animation: meteor 6552ms linear infinite;
-  animation-delay: 4886ms;
+  top: 62vh;
+  left: 79vw;
+  animation: meteor 7585ms linear infinite;
+  animation-delay: 130ms;
 }
 main > section .meteor-shower .meteor:nth-child(12) {
   position: absolute;
@@ -252,10 +252,10 @@ main > section .meteor-shower .meteor:nth-child(12) {
   width: 60px;
   height: 49px;
   opacity: 0;
-  top: 17vh;
-  left: 41vw;
-  animation: meteor 7964ms linear infinite;
-  animation-delay: 461ms;
+  top: 23vh;
+  left: 25vw;
+  animation: meteor 5083ms linear infinite;
+  animation-delay: 4339ms;
 }
 main > section .meteor-shower .meteor:nth-child(13) {
   position: absolute;
@@ -263,10 +263,10 @@ main > section .meteor-shower .meteor:nth-child(13) {
   width: 60px;
   height: 49px;
   opacity: 0;
-  top: 91vh;
-  left: 2vw;
-  animation: meteor 7749ms linear infinite;
-  animation-delay: 62ms;
+  top: 43vh;
+  left: 54vw;
+  animation: meteor 4317ms linear infinite;
+  animation-delay: 1591ms;
 }
 main > section .meteor-shower .meteor:nth-child(14) {
   position: absolute;
@@ -274,10 +274,10 @@ main > section .meteor-shower .meteor:nth-child(14) {
   width: 60px;
   height: 49px;
   opacity: 0;
-  top: 26vh;
-  left: 30vw;
-  animation: meteor 5086ms linear infinite;
-  animation-delay: 832ms;
+  top: 21vh;
+  left: 20vw;
+  animation: meteor 6925ms linear infinite;
+  animation-delay: 4291ms;
 }
 main > section .meteor-shower .meteor:nth-child(15) {
   position: absolute;
@@ -285,10 +285,10 @@ main > section .meteor-shower .meteor:nth-child(15) {
   width: 60px;
   height: 49px;
   opacity: 0;
-  top: 91vh;
-  left: 77vw;
-  animation: meteor 7391ms linear infinite;
-  animation-delay: 4277ms;
+  top: 47vh;
+  left: 78vw;
+  animation: meteor 5039ms linear infinite;
+  animation-delay: 171ms;
 }
 
 @keyframes meteor {
@@ -402,12 +402,12 @@ main > section .meteor-shower .meteor:nth-child(15) {
   opacity: 0;
   top: 35%;
   left: 50%;
-  transform: translate(-200%, -38%) scale(0);
+  transform: translate(-50%, -50%) scale(0);
   transition: all 0.3s;
 }
 #sidebar nav ul li a.active:before {
   opacity: 0.15;
-  transform: translate(-150%, -38%) scale(0.75);
+  transform: translate(-50%, -50%) scale(0.75);
 }
 #sidebar nav ul li a.active i {
   color: #658df2;
