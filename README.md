@@ -1,4 +1,4 @@
-# Portfolio (static site)
+# Portfolio
 
 This repo is my portfolio site: a hand-rolled layout with a slim rail on the left for jumping between sections, while the main area swaps what you see without full reloads. I wanted something fast to host anywhere and easy to tweak without wrestling a framework, so it’s mostly HTML, SCSS, and a little JavaScript.
 
