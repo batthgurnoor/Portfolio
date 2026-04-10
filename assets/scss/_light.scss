@@ -40,35 +40,61 @@ html[theme="light"] {
 
 
 
-  #sidebar{
-   .logo img {
-        filter: invert(100%);
-   }
-    nav ul li {
-        a {
-            &:hover i{
-                color:$paragraph_light;
-            }
-            i{
-            color: $gray_light;
-        }
-    }
-        > span {
-            background: $secondary_gray_light;
-        }
-     }
-     .toggle-mode .outer{
-        background: $secondary_gray_light;
+  #sidebar {
+    background: linear-gradient(165deg, #f8f9fc 0%, #eef0f6 45%, #f4f5f9 100%);
+    border-right-color: rgba(0, 0, 0, 0.07);
+    box-shadow: 6px 0 36px rgba(0, 0, 0, 0.06);
 
-        .inner{
-            margin-top: 5px;
-            &:before {
-                background: $secondary_gray_light;
-                opacity:0
-            }
-        }
-     }
+    .logo {
+      img {
+        filter: invert(100%);
+        background: rgba(0, 0, 0, 0.04);
+        border-color: rgba(0, 0, 0, 0.08);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      }
+
+      &::after {
+        opacity: 0.5;
+      }
     }
+
+    nav ul li {
+      a {
+        &.active {
+          box-shadow: 0 0 0 1px rgba($primary, 0.25), 0 8px 22px rgba(101, 141, 242, 0.12);
+        }
+
+        &:hover i {
+          color: $paragraph_light;
+        }
+
+        i {
+          color: $gray_light;
+        }
+      }
+
+      > span {
+        background: rgba(255, 255, 255, 0.95);
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        color: $paragraph_light;
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+      }
+    }
+
+    .toggle-mode .outer {
+      background: $secondary_gray_light;
+      border-color: rgba(0, 0, 0, 0.08);
+
+      .inner {
+        margin-top: 5px;
+
+        &:before {
+          background: $secondary_gray_light;
+          opacity: 0;
+        }
+      }
+    }
+  }
     
     #home{
         .info {
@@ -181,89 +207,114 @@ html[theme="light"] {
                 }
             }
         }
-        .work-items .item .wrap:after{
-            background: rgba(#fff, 0.8);
+        .project-card {
+            background: rgba(28, 28, 34, 0.22);
+            border-color: rgba(0, 0, 0, 0.08);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+            backdrop-filter: blur(22px) saturate(1.15);
+            -webkit-backdrop-filter: blur(22px) saturate(1.15);
+            color: #a4a6b8;
+
+            .project-card__title {
+                color: #f4f4f8;
+            }
+
+            .project-card__desc {
+                color: #9ca0b5;
+            }
         }
-    }
-    .modal#workModal {
-        .modal-dialog .modal-content{
-            background: #fff;
-
-            .modal-body {
-                .modal-close-button{
-                    background: $secondary_gray_light;
-                    border: 0.1px solid rgba(0, 0, 0, 0.5) ;
-
-                    &:hover{
-                        background: $primary;
-                        border: 0.1px solid rgba( $primary, 0.5) ;
-
-                        i{
-                            color:#fff
-                        }
-                    }
-            }
-            .left p{
-                color:$gray_light;
-            }
-            .right .value{
-                 color:$gray_light;
-            }
-             
-        }
-        }
-
-    }
-    #testimonial {
-        .main-section .comments .item .box{
-            background: rgba($secondary_gray_light, 0.9);
-
-            &:before{
-                border-bottom-color: rgba($secondary_gray_light, 0.9);
-            }
-            
-        }
-        .writer span.field{
-             color: $gray_light !important ;   
-            }
     }
 
     #contact {
+        .contact-title {
+            color: $paragraph_light;
+        }
+
+        .contact-lead {
+            color: $gray_light;
+        }
+
+        .contact-form-panel {
+            background: rgba(255, 255, 255, 0.72);
+            border-color: rgba(0, 0, 0, 0.08);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+        }
+
         .container {
             .form {
-                .form-item{
+                .form-item {
+                    &:before {
+                        background-color: rgba(0, 0, 0, 0.1);
+                    }
 
-                    &:before{
-                        background-color: $secondary_gray_light;
+                    &:after {
+                        background: linear-gradient(90deg, $primary, lighten($primary, 8%));
                     }
-                    &:after{
-                        background-color: $primary;
+
+                    label {
+                        color: $gray_light;
                     }
-                     label{
-                        color:$gray_light;
-                     }
+
+                    &.focus label {
+                        color: $primary;
                     }
+
+                    input,
+                    textarea {
+                        color: $paragraph_light;
+                    }
+                }
             }
-            .info{
-                .item{
-                    &:hover{
-                        i{
-                            background:$primary;
-                            color:#FFF;
+
+            .info {
+                .item {
+                    background: rgba(255, 255, 255, 0.65);
+                    border-color: rgba(0, 0, 0, 0.08);
+
+                    &:hover {
+                        i {
+                            color: #fff;
                         }
                     }
-                    i{
-                        background: $secondary_gray_light;
+
+                    i {
+                        background: rgba($primary, 0.12);
+                        color: $primary;
                     }
-                    .text{
-                        .title{
-                        color:$gray_light;
-                    }
-                    a{
-                        color:$paragraph_light;
+
+                    .text {
+                        .title {
+                            color: $gray_light;
+                        }
+
+                        a {
+                            color: $paragraph_light;
+
+                            &:hover {
+                                color: $primary;
+                            }
+                        }
+
+                        p {
+                            color: $paragraph_light;
+                        }
                     }
                 }
-                }
+            }
+        }
+
+        .contact-quick-links a {
+            background: rgba(0, 0, 0, 0.04);
+            border-color: rgba(0, 0, 0, 0.1);
+            color: $paragraph_light;
+
+            i {
+                color: $primary;
+            }
+
+            &:hover {
+                background: rgba($primary, 0.08);
+                color: $paragraph_light;
             }
         }
     }
