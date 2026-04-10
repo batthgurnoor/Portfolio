@@ -15,6 +15,9 @@ document.querySelector("#sidebar .toggle-sidebar").addEventListener("click", fun
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+  if (typeof emailjs !== "undefined") {
+    emailjs.init("XOA7aiCVVzp5pQLQF");
+  }
   var atroposElement = document.querySelector(".my-atropos");
   if (atroposElement) {
     Atropos({
@@ -29,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 var typed = new Typed(".field h2", {
-  strings: ["Developer", "Photographer", "Web Designer"],
+  strings: ["Software Developer", "Full-Stack Developer", "Photographer"],
   loop: true,
   typeSpeed: 70,
   backDelay: 1000,
@@ -55,8 +58,9 @@ for (let i = 1; i < 15; i++) {
 for (let i = 1; i < 15; i++) {
   let meteor = document.createElement("span");
   meteor.classList = "meteor";
-  document.querySelector("#testimonial .meteor-shower").append(meteor);
+  document.querySelector("#work .meteor-shower").append(meteor);
 }
+
 for (let i = 1; i < 15; i++) {
   let meteor = document.createElement("span");
   meteor.classList = "meteor";
@@ -73,7 +77,7 @@ filterButtons.forEach((item) => {
   item.addEventListener("click", workFilter);
 });
 
-function workFilter() {
+function workFilter(event) {
   const clickedButton = event.currentTarget;
   const clickedButtonGroup = clickedButton.getAttribute("data-group");
 
@@ -83,55 +87,6 @@ function workFilter() {
 
   shuffleInstance.filter(clickedButtonGroup);
 }
-
-const workElements = document.querySelectorAll("#work .work-items .wrap");
-const workModalElement = document.getElementById("workModal");
-const workModal = workModalElement ? new bootstrap.Modal(workModalElement) : null;
-
-workElements.forEach((item) => {
-  item.addEventListener("click", function () {
-    if (workModal) {
-      workModal.show();
-    }
-    document.querySelector("#workModal .modal-body img").setAttribute("src", item.getAttribute("data-image"));
-
-    document.querySelector("#workModal .modal-body .title").innerText = item.getAttribute("data-title");
-    document.querySelector("#workModal .modal-body .description").innerText =
-      item.getAttribute("data-description");
-    document.querySelector("#workModal .modal-body .client .value").innerText =
-      item.getAttribute("data-client");
-    document.querySelector("#workModal .modal-body .completed .value").innerText =
-      item.getAttribute("data-completed");
-    document.querySelector("#workModal .modal-body .skills .value").innerText =
-      item.getAttribute("data-skills");
-    document
-      .querySelector("#workModal .modal-body .project-link a")
-      .setAttribute("href", item.getAttribute("data-project-link"));
-  });
-});
-
-if (workModalElement) {
-  workModalElement.addEventListener("show.bs.modal", function () {
-    document.getElementById("work").classList.add("blur");
-    document.getElementById("sidebar").classList.add("blur");
-  });
-
-  workModalElement.addEventListener("hidden.bs.modal", function () {
-    document.getElementById("work").classList.remove("blur");
-    document.getElementById("sidebar").classList.remove("blur");
-  });
-}
-
-let testimonialImages = document.querySelectorAll("#testimonial .images img");
-testimonialImages.forEach((item, index) => {
-  let position = index + 1;
-  item.addEventListener("click", function () {
-    document.querySelector("#testimonial .images img.active").classList.remove("active");
-    document.querySelector(`#testimonial .images img:nth-child(${position})`).classList.add("active");
-    document.querySelector("#testimonial .comments .item.active").classList.remove("active");
-    document.querySelector(`#testimonial .comments .item:nth-child(${position})`).classList.add("active");
-  });
-});
 
 let formItems = document.querySelectorAll("#contact .form input, #contact .form textarea");
 formItems.forEach((item) => {
@@ -148,14 +103,6 @@ formItems.forEach((item) => {
   });
 });
 
-function initalEmail() {
-  emailjs.init("XOA7aiCVVzp5pQLQF");
-}
-
-const name1 = document.getElementById("textInput").value;
-const email1 = document.getElementById("emailInput").value;
-const subject1 = document.getElementById("subjectInput").value;
-const message1 = document.getElementById("messageInput").value;
 const form = document.getElementById("message-form");
 form.addEventListener("submit", function (event) {
   event.preventDefault();
