@@ -133,10 +133,10 @@ main > section .meteor-shower .meteor:nth-child(1) {
   width: 60px;
   height: 49px;
   opacity: 0;
-  top: 49vh;
-  left: 15vw;
-  animation: meteor 3613ms linear infinite;
-  animation-delay: 3909ms;
+  top: 61vh;
+  left: 13vw;
+  animation: meteor 3918ms linear infinite;
+  animation-delay: 3819ms;
 }
 main > section .meteor-shower .meteor:nth-child(2) {
   position: absolute;
@@ -144,10 +144,10 @@ main > section .meteor-shower .meteor:nth-child(2) {
   width: 60px;
   height: 49px;
   opacity: 0;
-  top: 45vh;
-  left: 94vw;
-  animation: meteor 5637ms linear infinite;
-  animation-delay: 2940ms;
+  top: 22vh;
+  left: 18vw;
+  animation: meteor 7120ms linear infinite;
+  animation-delay: 3070ms;
 }
 main > section .meteor-shower .meteor:nth-child(3) {
   position: absolute;
@@ -155,10 +155,10 @@ main > section .meteor-shower .meteor:nth-child(3) {
   width: 60px;
   height: 49px;
   opacity: 0;
-  top: 84vh;
-  left: 97vw;
-  animation: meteor 3095ms linear infinite;
-  animation-delay: 3546ms;
+  top: 37vh;
+  left: 92vw;
+  animation: meteor 4292ms linear infinite;
+  animation-delay: 2269ms;
 }
 main > section .meteor-shower .meteor:nth-child(4) {
   position: absolute;
@@ -166,10 +166,10 @@ main > section .meteor-shower .meteor:nth-child(4) {
   width: 60px;
   height: 49px;
   opacity: 0;
-  top: 46vh;
-  left: 12vw;
-  animation: meteor 7533ms linear infinite;
-  animation-delay: 1858ms;
+  top: 4vh;
+  left: 82vw;
+  animation: meteor 6490ms linear infinite;
+  animation-delay: 1816ms;
 }
 main > section .meteor-shower .meteor:nth-child(5) {
   position: absolute;
@@ -177,10 +177,10 @@ main > section .meteor-shower .meteor:nth-child(5) {
   width: 60px;
   height: 49px;
   opacity: 0;
-  top: 50vh;
-  left: 32vw;
-  animation: meteor 7060ms linear infinite;
-  animation-delay: 4858ms;
+  top: 18vh;
+  left: 81vw;
+  animation: meteor 5630ms linear infinite;
+  animation-delay: 3631ms;
 }
 main > section .meteor-shower .meteor:nth-child(6) {
   position: absolute;
@@ -188,10 +188,10 @@ main > section .meteor-shower .meteor:nth-child(6) {
   width: 60px;
   height: 49px;
   opacity: 0;
-  top: 78vh;
-  left: 5vw;
-  animation: meteor 3296ms linear infinite;
-  animation-delay: 329ms;
+  top: 68vh;
+  left: 44vw;
+  animation: meteor 4856ms linear infinite;
+  animation-delay: 1928ms;
 }
 main > section .meteor-shower .meteor:nth-child(7) {
   position: absolute;
@@ -199,10 +199,10 @@ main > section .meteor-shower .meteor:nth-child(7) {
   width: 60px;
   height: 49px;
   opacity: 0;
-  top: 70vh;
-  left: 2vw;
-  animation: meteor 6537ms linear infinite;
-  animation-delay: 2136ms;
+  top: 57vh;
+  left: 95vw;
+  animation: meteor 6252ms linear infinite;
+  animation-delay: 1104ms;
 }
 main > section .meteor-shower .meteor:nth-child(8) {
   position: absolute;
@@ -210,10 +210,10 @@ main > section .meteor-shower .meteor:nth-child(8) {
   width: 60px;
   height: 49px;
   opacity: 0;
-  top: 4vh;
-  left: 97vw;
-  animation: meteor 5332ms linear infinite;
-  animation-delay: 3990ms;
+  top: 48vh;
+  left: 87vw;
+  animation: meteor 7373ms linear infinite;
+  animation-delay: 34ms;
 }
 main > section .meteor-shower .meteor:nth-child(9) {
   position: absolute;
@@ -221,10 +221,10 @@ main > section .meteor-shower .meteor:nth-child(9) {
   width: 60px;
   height: 49px;
   opacity: 0;
-  top: 55vh;
-  left: 70vw;
-  animation: meteor 6196ms linear infinite;
-  animation-delay: 2457ms;
+  top: 40vh;
+  left: 79vw;
+  animation: meteor 7543ms linear infinite;
+  animation-delay: 966ms;
 }
 main > section .meteor-shower .meteor:nth-child(10) {
   position: absolute;
@@ -232,10 +232,10 @@ main > section .meteor-shower .meteor:nth-child(10) {
   width: 60px;
   height: 49px;
   opacity: 0;
-  top: 89vh;
-  left: 81vw;
-  animation: meteor 3226ms linear infinite;
-  animation-delay: 969ms;
+  top: 86vh;
+  left: 52vw;
+  animation: meteor 4412ms linear infinite;
+  animation-delay: 173ms;
 }
 main > section .meteor-shower .meteor:nth-child(11) {
   position: absolute;
@@ -243,10 +243,10 @@ main > section .meteor-shower .meteor:nth-child(11) {
   width: 60px;
   height: 49px;
   opacity: 0;
-  top: 50vh;
-  left: 95vw;
-  animation: meteor 4061ms linear infinite;
-  animation-delay: 372ms;
+  top: 81vh;
+  left: 78vw;
+  animation: meteor 7923ms linear infinite;
+  animation-delay: 1636ms;
 }
 main > section .meteor-shower .meteor:nth-child(12) {
   position: absolute;
@@ -254,10 +254,10 @@ main > section .meteor-shower .meteor:nth-child(12) {
   width: 60px;
   height: 49px;
   opacity: 0;
-  top: 96vh;
-  left: 56vw;
-  animation: meteor 6959ms linear infinite;
-  animation-delay: 3793ms;
+  top: 72vh;
+  left: 98vw;
+  animation: meteor 6778ms linear infinite;
+  animation-delay: 3369ms;
 }
 main > section .meteor-shower .meteor:nth-child(13) {
   position: absolute;
@@ -265,10 +265,10 @@ main > section .meteor-shower .meteor:nth-child(13) {
   width: 60px;
   height: 49px;
   opacity: 0;
-  top: 36vh;
-  left: 5vw;
-  animation: meteor 3324ms linear infinite;
-  animation-delay: 2438ms;
+  top: 78vh;
+  left: 70vw;
+  animation: meteor 3395ms linear infinite;
+  animation-delay: 3795ms;
 }
 main > section .meteor-shower .meteor:nth-child(14) {
   position: absolute;
@@ -276,10 +276,10 @@ main > section .meteor-shower .meteor:nth-child(14) {
   width: 60px;
   height: 49px;
   opacity: 0;
-  top: 83vh;
-  left: 60vw;
-  animation: meteor 7538ms linear infinite;
-  animation-delay: 4637ms;
+  top: 46vh;
+  left: 91vw;
+  animation: meteor 3511ms linear infinite;
+  animation-delay: 3034ms;
 }
 main > section .meteor-shower .meteor:nth-child(15) {
   position: absolute;
@@ -287,10 +287,10 @@ main > section .meteor-shower .meteor:nth-child(15) {
   width: 60px;
   height: 49px;
   opacity: 0;
-  top: 71vh;
-  left: 16vw;
-  animation: meteor 3632ms linear infinite;
-  animation-delay: 3506ms;
+  top: 32vh;
+  left: 99vw;
+  animation: meteor 3492ms linear infinite;
+  animation-delay: 4849ms;
 }
 
 @keyframes meteor {
@@ -968,6 +968,11 @@ main > section .meteor-shower .meteor:nth-child(15) {
 #work.blur {
   filter: blur(2px);
 }
+#work .container-fluid {
+  padding-bottom: 16px;
+  padding-left: clamp(10px, 2.5vw, 28px);
+  padding-right: clamp(10px, 2.5vw, 28px);
+}
 #work .filters {
   text-align: center;
   margin-top: 81px;
@@ -996,6 +1001,8 @@ main > section .meteor-shower .meteor:nth-child(15) {
 }
 #work .work-items .item {
   margin-bottom: 24px;
+  /* Room for hover lift + shadow (Shuffle item columns) */
+  padding-top: clamp(2px, 5vw, 5px);
 }
 #work {
   /* ── Project tiles (glass cards, accent per project) ── */
@@ -1044,6 +1051,9 @@ main > section .meteor-shower .meteor:nth-child(15) {
   position: relative;
   z-index: 1;
   margin-top: auto;
+  align-self: flex-start;
+  width: fit-content;
+  max-width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -1129,37 +1139,29 @@ main > section .meteor-shower .meteor:nth-child(15) {
   position: relative;
   z-index: 1;
   margin-top: auto;
+  align-self: flex-start;
+  width: fit-content;
+  max-width: 100%;
   display: inline-flex;
   align-items: center;
   gap: 6px;
+  padding: 8px 14px;
+  border-radius: 8px;
   font-family: "JetBrains Mono", ui-monospace, monospace;
   font-size: 12px;
   font-weight: 600;
-  color: var(--project-accent);
+  color: #fff;
   text-decoration: none;
-  transition: gap 0.25s ease, color 0.2s ease;
-}
-#work .project-card__cta:hover {
-  color: color-mix(in srgb, var(--project-accent) 85%, #fff);
-}
-#work .project-card__cta:focus-visible {
-  outline: 2px solid var(--project-accent);
-  outline-offset: 3px;
-  border-radius: 4px;
-}
-#work .project-card__cta--primary {
-  padding: 8px 14px;
-  border-radius: 8px;
   background: color-mix(in srgb, var(--project-accent) 32%, rgba(8, 8, 16, 0.55));
   border: 1px solid color-mix(in srgb, var(--project-accent) 55%, transparent);
-  color: #fff;
+  transition: gap 0.25s ease, color 0.2s ease, background 0.25s ease, border-color 0.25s ease;
 }
-#work .project-card__cta--primary:hover {
+#work .project-card__cta:hover {
   color: #fff;
   background: color-mix(in srgb, var(--project-accent) 45%, rgba(8, 8, 16, 0.45));
   border-color: color-mix(in srgb, var(--project-accent) 70%, transparent);
 }
-#work .project-card__cta--primary:focus-visible {
+#work .project-card__cta:focus-visible {
   outline: 2px solid var(--project-accent);
   outline-offset: 3px;
 }
